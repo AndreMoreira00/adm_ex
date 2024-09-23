@@ -13,6 +13,13 @@
   "action": {
     "default_popup": "dist/index.html" 
   },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/contentScript.bundle.js"],
+      "run_at": "document_end"
+    }
+  ],
   "host_permissions": [
     "https://*/*",
     "http://*/*"

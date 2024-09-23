@@ -5,6 +5,7 @@ const Dotenv = require('dotenv-webpack');
 module.exports = {
   entry: {
     background: './src/background.js',
+    contentScript: './src/contentScript.js',
     index: './src/index.js',
   },
   output: {

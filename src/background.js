@@ -1,6 +1,5 @@
-import { Gemini } from './apiGemini';
-
-chrome.runtime.onInstalled.addListener(() => {
-  console.log('Extension installed');
-  Gemini().then(response => console.log(response));
-});
+// import { Gemini } from './apiGemini';
+// const prompt = document.getElementById('prompt').value
+// chrome.runtime.onInstalled.addListener(() => {
+//   Gemini(prompt).then(response => console.log(response));
+// });
