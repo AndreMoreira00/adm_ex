@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
@@ -32,6 +33,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       filename: 'index.html',
+    }),
+  new CopyWebpackPlugin({
+      patterns: [
+        { from: './style.css', to: 'style.css' }, // Copia o CSS para a pasta dist
+      ],
     }),
   ],
 };

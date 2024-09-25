@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Gemini API Extension",
+  "name": "Extension",
   "version": "1.0",
   "permissions": [
     "activeTab",
